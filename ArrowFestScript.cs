@@ -13,7 +13,7 @@ public class ArrowFestScript : MonoBehaviour
     public LayerMask layermask;
     public float mesafe;
 
-    //Editor iÁin
+    //Editor i√ßin
 
     [Range(0,300)]
     public int ArrowCount;
@@ -23,7 +23,7 @@ public class ArrowFestScript : MonoBehaviour
 
 
     // Arrow Fest Oyun Mekanigi
-    // Hata Veya Soru sormak istiyorsaniz Discord DRA«#7981 mesaj gonderebilirsiniz
+    // Hata Veya Soru sormak istiyorsaniz Discord DRA√á#7981 mesaj gonderebilirsiniz
 
     void Update()
     {
@@ -44,7 +44,7 @@ public class ArrowFestScript : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100, layermask))
         {
             Vector3 mouse = hit.point;
-            mouse.x = Mathf.Clamp(mouse.x, MinX, MaksX); //Minx v MaksX aras˝nda deer al
+            mouse.x = Mathf.Clamp(mouse.x, MinX, MaksX); //Minx v MaksX aras√Ωnda de√∞er al
 
             mesafe = mouse.x;
 
@@ -81,10 +81,10 @@ public class ArrowFestScript : MonoBehaviour
 
 
 
-    // Editor ›Áin
+    // Editor √ù√ßin
 
 
-    // Oyun calismiyorken editor penceresinde bir degisiklik yapildiginda ornegin (Arrow sayisini artt˝rdigimizda) asagidaki OnValidate fonksiyonu calisir
+    // Oyun calismiyorken editor penceresinde bir degisiklik yapildiginda ornegin (Arrow sayisini arttirdigimizda) asagidaki OnValidate fonksiyonu calisir
     // Yani oyunu calistirmadan Editordern ayar yapmaya yarar
     // Ama bunu kullanmak istiyorsaniz Package Manager'den Editor Coroutines paketini idnirmelisiniz
 
@@ -124,7 +124,7 @@ public class ArrowFestScript : MonoBehaviour
         {
             GameObject arrowClone = arrows[i];
             arrows.RemoveAt(i);
-            EditorCoroutineUtility.StartCoroutine(DestroyObject(arrowClone), this); //Destroy i˛lemini editˆrde yapmak iÁin
+            EditorCoroutineUtility.StartCoroutine(DestroyObject(arrowClone), this); //Destroy i√ælemini edit√∂rde yapmak i√ßin
         }
 
         isDecrase = false;
