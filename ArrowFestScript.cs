@@ -13,7 +13,6 @@ public class ArrowFestScript : MonoBehaviour
     public LayerMask layermask;
     public float mesafe;
 
-    //Editor için
 
     [Range(0,300)]
     public int ArrowCount;
@@ -25,7 +24,7 @@ public class ArrowFestScript : MonoBehaviour
     // *!!!*
 
     // Arrow Fest Oyun Mekanigi
-    // Hata Veya Soru sormak istiyorsaniz Discord DRAÇ#7981 mesaj gonderebilirsiniz
+    // Hata Veya Soru sormak istiyorsaniz Discord DRAÃ‡#7981 mesaj gonderebilirsiniz
 
     void Update()
     {
@@ -46,7 +45,7 @@ public class ArrowFestScript : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 100, layermask))
         {
             Vector3 mouse = hit.point;
-            mouse.x = Mathf.Clamp(mouse.x, MinX, MaksX); //Minx v MaksX arasýnda deðer al
+            mouse.x = Mathf.Clamp(mouse.x, MinX, MaksX); //Minx v MaksX arasÃ½nda deÃ°er al
 
             mesafe = mouse.x;
 
