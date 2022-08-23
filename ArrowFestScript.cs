@@ -25,6 +25,7 @@ public class ArrowFestScript : MonoBehaviour
 
     // Arrow Fest Oyun Mekanigi
     // Hata Veya Soru sormak istiyorsaniz Discord DRAÇ#7981 mesaj gonderebilirsiniz
+    
 
     void Update()
     {
