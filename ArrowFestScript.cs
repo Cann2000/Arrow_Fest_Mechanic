@@ -11,7 +11,7 @@ public class ArrowFestScript : MonoBehaviour
     public Transform Parent;
     public float MinX, MaksX;
     public LayerMask layermask;
-    public float mesafe;
+    public float distance;
 
 
     [Range(0,300)]
@@ -48,7 +48,7 @@ public class ArrowFestScript : MonoBehaviour
             Vector3 mouse = hit.point;
             mouse.x = Mathf.Clamp(mouse.x, MinX, MaksX); //Minx v MaksX arasýnda deðer al
 
-            mesafe = mouse.x;
+            distance = mouse.x;
 
             diz();
         }
@@ -76,7 +76,7 @@ public class ArrowFestScript : MonoBehaviour
         pos.x = Mathf.Cos(degree * Mathf.Deg2Rad);
         pos.y = Mathf.Sin(degree * Mathf.Deg2Rad);
 
-        objectTransform.localPosition = pos * mesafe;
+        objectTransform.localPosition = pos * distance;
     }
 
 
